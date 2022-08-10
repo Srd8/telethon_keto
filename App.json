@@ -1,0 +1,93 @@
+{
+  "name": "بوت مصنع كيتو",
+  "description":  "سورس كيتو"
+  "logo": "https://telegra.ph/file/a74ce17fbd178323af135.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Srd8/telethon_keto",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "هـنا ضع اسم حسابك الخاص بالتلي",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "هـنا ضع ايبي ايدي احصل عليه من  :  my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "هـنا ضع ايبي هاش احصل عليه من my.telegram.org",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "هـنا ضع كـود تيرمكس ",
+      "value": ""
+    },
+    "TG_BOT_USERNAME": {
+      "description": " @ هنـا ضع معرف بوت التلي الخاص بك بدون ",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "هنـا ضع توكن بوتك .",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "لا تغيـرها ابدا",
+      "value": ".",
+      "required": false
+    },
+    "ENV": {
+      "description": "لا تغيـرها ابدا.",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "ايبـي هيروكو احصل عليه من هذا الرابط مطلوبة ! https://dashboard.heroku.com/account",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق اول اسم خليته ",
+      "value": ""
+    },
+    "DEFAULT_BIO": {
+      "description": "هنا خلي نبذتك حسابك الي تطلع وي البايو الوقتي ",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "هنـا ضع المنطقه الزمنية الخاص بك  احصل عليه من  http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "لا تغيـرها ابدا",
+      "value": "Jmthon-iq",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
